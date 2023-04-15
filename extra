@@ -1,0 +1,116 @@
+https://code.visualstudio.com/ > Install
+https://nodejs.org/en > Install
+https://git-scm.com/downloads > Install
+https://github.com/ > Create Account
+https://github.com/Aakashdeveloper > Follow
+
+FullStack Zomato app
+Template Forms
+Reactive Forms
+Login logout (jwt)
+Dummy api
+Deployment
+> Github
+> Angular over node server
+> Angular over python server
+> Netlify(https://www.netlify.com/)
+> Render.com
+> AWS
+> Jenkins
+> nginx
+> Docker 
+> Github Actions
+LazyLoading
+Payment
+Ang Material
+
+Zomato+login logout
+Testing
+
+Multilingual
+Zomato + Google Login
+
+>>>>>>>>NO Covered<<<<<>>>>>
+> HTML CSS JAVASCRIPT
+> No Api Building (app,loginlogout)
+
+
+open source
+3,160,346 
+
+/////////////
+JSON > JavaScript Object notation
+Way to represent the data
+key:Value
+Structred and unStructred
+
+[
+    {
+        "name":"John",
+        "city":"Delhi",
+        "Subject:"UI"
+    },
+    {
+        "name":"Ankit",
+        "city":"Paris"
+    },
+    {
+        "name":"Nikita",
+        "city":"London"
+    }
+]
+
+//////////////////////
+Package.json
+> Name,version, description
+> Packages in the application
+> Script (Start,Build,Test)
+> Entry point
+
+//////Step to generate package.json
+**NodeJs must be install in laptop
+> Open the cmd/terminal and go inside the folder
+> npm init 
+> Answer all question
+> Type "yes"
+
+//////Step to install
+(local)
+> Open the cmd/terminal and go inside the folder
+> npm i packagename
+
+npm i packagename@4.3.2
+
+(Global)
+> Install in developer laptop
+> only need to generate the app/start app
+> will not add in package.json
+> Admin access to laptop
+
+* Window
+# open the cmd as admininstrtor
+# npm i -g  packagename
+
+* Mac/Linuc
+> open terminal
+> sudo npm i -g  packagename
+
+// Step to generate angular app
+* one time
+# open the cmd as admininstrtor
+# npm i -g  @angular/cli
+
+* next all time you need new app
+> open cmd
+> go inside folder where you want app
+> ng new appname
+
+//////Step to run the app
+# open the cmd go inside the app folder
+# npm start
+
+
+//file walkthrough
+Package.json> Main file and entry poitn
+package-lock.json > Dependency tree
+node_modules > save all the package

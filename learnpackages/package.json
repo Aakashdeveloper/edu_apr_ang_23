@@ -1,0 +1,19 @@
+{
+  "name": "angularstart",
+  "version": "1.0.0",
+  "description": "this is about npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Node",
+    "Angular"
+  ],
+  "author": "developerfunnel",
+  "license": "ISC",
+  "dependencies": {
+    "morgan": "^1.10.0",
+    "rxjs": "^7.8.0"
+  }
+}
