@@ -1,18 +1,36 @@
-import { NgModule } from '@angular/core';
+import { NgModule }  from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FooterComponent } from './Footer/footer.component';
+import { HeaderComponent } from './Header/header.component';
+import { HomeComponent } from './Home/home.component';
+import { QuickSearchComponent } from './Home/quickSearch.component';
+import { SearchComponent } from './Home/search.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    // All the component & pipe
+    declarations: [
+        AppComponent,
+        HomeComponent,
+        FooterComponent,
+        HeaderComponent,
+        SearchComponent,
+        QuickSearchComponent
+    ],
+
+    // All the modules
+    imports: [
+        BrowserModule
+    ],
+
+    // All the services
+    providers:[],
+
+    // only and only main component
+    bootstrap:[
+        AppComponent
+    ]
 })
-export class AppModule { }
+
+export class AppModule{}

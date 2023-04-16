@@ -4,6 +4,16 @@ https://git-scm.com/downloads > Install
 https://github.com/ > Create Account
 https://github.com/Aakashdeveloper > Follow
 
+extension vscode
+> vscode icons
+> Gitlens
+> GitHistory
+> TabNine
+> SpellCheck
+
+extension in chorme
+> https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh
+
 FullStack Zomato app
 Template Forms
 Reactive Forms
@@ -114,3 +124,55 @@ npm i packagename@4.3.2
 Package.json> Main file and entry poitn
 package-lock.json > Dependency tree
 node_modules > save all the package
+Readme.md > Detail description and static file
+.gitignore> All this you want to avoid pushing to git
+.browserwelistrc > Make code compitable for browser(css & js);
+.editorconfig > Make code compitable for editor for multiple developer
+karma.conf > use to configure test cases
+tsconfig.json> Provide application which JS version to target and where build be made 
+tsconfig.spec > test file of tsconfig
+angular.json >
+                Main configurtation
+                > first .ts file, all common css and js 
+
+>>>>src
+app > all the dvelopment will happen here
+assets > all the images or static files
+environment.ts > configure env 
+favicon > icon for browser
+index.html> Main html file for the application
+main.ts > first .ts specify the location main module
+polyfills > make compitable for IE/edge
+style.css > main(common) css file for the app
+test.ts> This file is required by karma.conf.js
+
+///////////////////
+Package.json > angular.json > Main.ts > app.module.ts > app.component.ts > index.html
+    Browser > index.html
+
+https://blog.angular.io/
+
+
+///Angular building block
+> Modules
+# ngModule
+* Parent of the app
+* All the declaration will happen here
+
+> Component
+# component
+* HTML,css
+* Logics
+
+> Pipes
+# pipe & pipetransform
+* Run time data manipulation
+
+> Services(Injectable)
+# injeactble
+* To connect with external Agent
+* Dependency Injection
+
+> Routing
+# Ngmodule
+* To navigate between the pages
