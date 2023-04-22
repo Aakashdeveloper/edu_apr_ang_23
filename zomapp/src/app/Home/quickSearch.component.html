@@ -6,83 +6,24 @@
         Find Restaurants By MealType
     </span>
     <div class="mainBox">
-        <div class="tileContainer">
+        <div class="tileContainer" *ngFor="let meal of mealData">
             <div class="tileComponent1">
-                <img src="../../assets/images/drinks.png" alt="drinks"/>
+                <img [src]="meal.meal_image" alt="drinks"/>
             </div>
             <div class="tileComponent2">
                 <div class="compHeading">
-                    <a href="../listing/listing.html">BreakFast</a>
+                    <a href="../listing/listing.html">
+                        {{meal.mealtype | MyUpper:'title'}}
+                    </a>
                 </div>
                 <div class="compSubHeading">
-                    Best Deal For BreakFast
+                   {{meal.content}}
                 </div>
-            </div>
-        </div>
-        <div class="tileContainer">
-            <div class="tileComponent1">
-                <img src="../../assets/images/dinner.png" alt="drinks"/>
-            </div>
-            <div class="tileComponent2">
-                <div class="compHeading">
-                    <a href="../listing/listing.html">BreakFast</a>
-                </div>
-                <div class="compSubHeading">
-                    Best Deal For BreakFast
-                </div>
-            </div>
-        </div>
-        <div class="tileContainer">
-            <div class="tileComponent1">
-                <img src="../../assets/images/drinks.png" alt="drinks"/>
-            </div>
-            <div class="tileComponent2">
-                <div class="compHeading">
-                    <a href="../listing/listing.html">BreakFast</a>
-                </div>
-                <div class="compSubHeading">
-                    Best Deal For BreakFast
-                </div>
-            </div>
-        </div>
-        <div class="tileContainer">
-            <div class="tileComponent1">
-                <img src="../../assets/images/bombay.jpg" alt="drinks"/>
-            </div>
-            <div class="tileComponent2">
-                <div class="compHeading">
-                    <a href="../listing/listing.html">BreakFast</a>
-                </div>
-                <div class="compSubHeading">
-                    Best Deal For BreakFast
-                </div>
-            </div>
-        </div>
-        <div class="tileContainer">
-            <div class="tileComponent1">
-                <img src="../../assets/images/snacks.png" alt="drinks"/>
-            </div>
-            <div class="tileComponent2">
-                <div class="compHeading">
-                    <a href="../listing/listing.html">BreakFast</a>
-                </div>
-                <div class="compSubHeading">
-                    Best Deal For BreakFast
-                </div>
-            </div>
-        </div>
-        <div class="tileContainer">
-            <div class="tileComponent1">
-                <img src="../../assets/images/nightlife.png" alt="drinks"/>
-            </div>
-            <div class="tileComponent2">
-                <div class="compHeading">
-                    <a href="../listing/listing.html">BreakFast</a>
-                </div>
-                <div class="compSubHeading">
-                    Best Deal For BreakFast
-                </div>
+               
             </div>
         </div>
     </div>
 </div>
+
+<!-- <h2>{{price | currency:'EUR'}}</h2> -->
+<!-- <h3>{{openedOn|date:'MMMM d, y'}}</h3> -->

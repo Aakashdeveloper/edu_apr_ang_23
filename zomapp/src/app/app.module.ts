@@ -7,6 +7,7 @@ import { HeaderComponent } from './Header/header.component';
 import { HomeComponent } from './Home/home.component';
 import { QuickSearchComponent } from './Home/quickSearch.component';
 import { SearchComponent } from './Home/search.component';
+import { MyUpperPipe } from './pipes/myUpper.pipe'
 
 @NgModule({
     // All the component & pipe
@@ -16,7 +17,8 @@ import { SearchComponent } from './Home/search.component';
         FooterComponent,
         HeaderComponent,
         SearchComponent,
-        QuickSearchComponent
+        QuickSearchComponent,
+        MyUpperPipe
     ],
 
     // All the modules
