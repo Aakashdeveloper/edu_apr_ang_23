@@ -1,0 +1,26 @@
+<div class="row">
+    <div id="mainListing">
+        <div id="filter">
+            <h3>Filters</h3>
+        </div>
+    </div>
+    <div id="content">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <input class="form-control" placeholder="Enter Restaurant Name"
+                    [(ngModel)]="userInput"/>
+                    <p>Result for <b>{{userInput}}</b></p>
+                    <p>Number of Restaurant</p>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="restaurants && restaurants.length; else noData">
+            <h1>Data is there</h1>
+        </div>
+        <ng-template #noData>
+            <h1>Loading....</h1>
+            <img src="../../assets/loader.gif" alt="loader"/>
+        </ng-template>
+    </div>
+</div>

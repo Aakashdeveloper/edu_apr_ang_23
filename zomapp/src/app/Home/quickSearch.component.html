@@ -8,11 +8,11 @@
     <div class="mainBox">
         <div class="tileContainer" *ngFor="let meal of mealData">
             <div class="tileComponent1">
-                <img [src]="meal.meal_image" alt="drinks"/>
+                <img [src]="meal.meal_image" [alt]="meal.mealtype"/>
             </div>
             <div class="tileComponent2">
                 <div class="compHeading">
-                    <a href="../listing/listing.html">
+                    <a [routerLink]="['/listing',meal.mealtype_id]">
                         {{meal.mealtype | MyUpper:'title'}}
                     </a>
                 </div>

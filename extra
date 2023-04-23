@@ -238,3 +238,24 @@ a.charAt(0).toUpperCase()+a.slice(1).toLowerCase()
 (get) allorder>            
        
 (get) restaurants>         http://3.17.216.66:4000/restaurants
+
+
+
+var a = 10
+var b = "my age is "+a
+"my age is 10"
+
+var a = 10
+var b = `my age is ${a}`
+"my age is 10"
+
+ng g c listing
+
+params
+> what we pass after /
+> need to define in the routing
+> if defined than complousry to pass
+queryParams
+> Pass after ?
+> no need to define in the routing
+> not complousry to pass
