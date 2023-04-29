@@ -259,3 +259,41 @@ queryParams
 > Pass after ?
 > no need to define in the routing
 > not complousry to pass
+
+
+
+var a = [4,7,9,3,5,1]
+
+a.map((data) => {return data*2})
+[8, 14, 18, 6, 10, 2]
+
+a.filter((data) => {return data>5})
+[7, 9]
+
+a.map((data) => {return data>5})
+[false, true, true, false, false, false]
+
+
+var a = [0,1,2]
+a.map((data) => {return data*2})
+[0, 2, 4]
+
+a.filter((data) => {return data*2})
+[1, 2]
+
+var a = ["Delhi","Helsinki","Mumbai","Boston","London"]
+a.indexOf('Delhi')
+0
+a.indexOf('London')
+4
+a.indexOf('Inssburg')
+-1
+a.indexOf('Venice')
+-1
+
+@input 
+> pass data from parent to child
+> Property
+@output 
+> pass data from child to parent
+> Event

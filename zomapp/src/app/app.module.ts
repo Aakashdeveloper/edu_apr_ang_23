@@ -14,6 +14,11 @@ import { HomeService } from './services/Home.service';
 import { ListingComponent } from './listing/listing.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { ListingService } from './services/listing.service';
+import { RestSearchFilter } from './pipes/searchFilter.pipe';
+import { CuisineFilterComponent } from './filters/cuisineFilter.component';
+import { CostFilterComponent } from './filters/costFilter.component';
+import { DetailsComponent } from './details/details.component';
 
 @NgModule({
     // All the component & pipe
@@ -26,7 +31,11 @@ import { NotfoundComponent } from './notfound/notfound.component';
         QuickSearchComponent,
         MyUpperPipe,
         ListingComponent,
-        NotfoundComponent
+        NotfoundComponent,
+        RestSearchFilter,
+        CuisineFilterComponent,
+        CostFilterComponent,
+        DetailsComponent
     ],
 
     // All the modules
@@ -39,7 +48,8 @@ import { NotfoundComponent } from './notfound/notfound.component';
 
     // All the services
     providers:[
-        HomeService
+        HomeService,
+        ListingService
     ],
 
     // only and only main component
