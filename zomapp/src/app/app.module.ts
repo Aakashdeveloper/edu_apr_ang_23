@@ -6,36 +6,19 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './Footer/footer.component';
 import { HeaderComponent } from './Header/header.component';
-import { HomeComponent } from './Home/home.component';
-import { QuickSearchComponent } from './Home/quickSearch.component';
-import { SearchComponent } from './Home/search.component';
-import { MyUpperPipe } from './pipes/myUpper.pipe'
-import { HomeService } from './services/Home.service';
-import { ListingComponent } from './listing/listing.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NotfoundComponent } from './notfound/notfound.component';
-import { ListingService } from './services/listing.service';
-import { RestSearchFilter } from './pipes/searchFilter.pipe';
-import { CuisineFilterComponent } from './filters/cuisineFilter.component';
-import { CostFilterComponent } from './filters/costFilter.component';
-import { DetailsComponent } from './details/details.component';
+import { HomeModule } from './Home/home.module';
+import { ListingModule } from './listing/listing.module';
+import { DetailsModule } from './details/details.module';
 
 @NgModule({
     // All the component & pipe
     declarations: [
         AppComponent,
-        HomeComponent,
         FooterComponent,
         HeaderComponent,
-        SearchComponent,
-        QuickSearchComponent,
-        MyUpperPipe,
-        ListingComponent,
-        NotfoundComponent,
-        RestSearchFilter,
-        CuisineFilterComponent,
-        CostFilterComponent,
-        DetailsComponent
+        NotfoundComponent
     ],
 
     // All the modules
@@ -43,14 +26,14 @@ import { DetailsComponent } from './details/details.component';
         BrowserModule,
         HttpClientModule,
         FormsModule,
-        AppRoutingModule
+        AppRoutingModule,
+        HomeModule,
+        ListingModule,
+        DetailsModule
     ],
 
     // All the services
-    providers:[
-        HomeService,
-        ListingService
-    ],
+    providers:[ ],
 
     // only and only main component
     bootstrap:[

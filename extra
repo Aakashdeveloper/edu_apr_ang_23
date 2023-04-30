@@ -297,3 +297,6 @@ a.indexOf('Venice')
 @output 
 > pass data from child to parent
 > Event
+
+ng-untouched  ng-pristine ng-valid
+ng-touched    ng-dirty    ng-invalid
