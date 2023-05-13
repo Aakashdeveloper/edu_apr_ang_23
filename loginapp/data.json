@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "firstName": "Amit",
+      "lastname": "Sharma",
+      "email": "amit@gmail.com",
+      "password": "12345678",
+      "clang": "Node",
+      "id": 1
+    },
+    {
+      "firstName": "Nikita",
+      "lastname": "Dubey",
+      "email": "nikita@gmail.com",
+      "password": "12345678",
+      "clang": "JavaScript",
+      "id": 2
+    },
+    {
+      "firstName": "Amit",
+      "lastname": "Sharma",
+      "email": "amit@gmail.com",
+      "password": "12345678",
+      "clang": "Node",
+      "id": 3
+    },
+    {
+      "firstName": "Amit",
+      "lastname": "Sharma",
+      "email": "amit@gmail.com",
+      "password": "12345678",
+      "clang": "Node",
+      "id": 4
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+<hr/>
+<div class="container">
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            User Info
+        </div>
+        <div class="panel-body">
+            <h1>Hii {{userInfo.name}}</h1>
+            <h2>Your Role is {{userInfo.role}}</h2>
+            <h2>Your Email is {{userInfo.email}}</h2>
+            <h2>Permission: {{userInfo.role==="Admin"?"You have Access to View User":"You have Access to View Your Profile Only"}}</h2>
+            <div *ngIf='userInfo.role === "Admin"'>
+                <a class="btn btn-success" [routerLink]="['/userList']">View Users</a>
+             </div> <br/>
+            <button class="btn btn-danger" (click)="logoutUser()">LogOut</button>
+        </div>
+    </div>
+</div>
