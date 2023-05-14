@@ -19,14 +19,15 @@ Template Forms
 Reactive Forms
 Login logout (jwt)
 Dummy api
-//////////////////////
 Deployment
-> Github
 > Angular over node server
 > Angular over python server
 > Netlify(https://www.netlify.com/)
+> Github
 > Render.com
 > AWS
+//////////////////////
+
 > Jenkins
 > nginx
 > Docker 
@@ -320,3 +321,7 @@ ng-touched    ng-dirty    ng-invalid
 (Header) => {'x-access-token':'token value from login'}
 
 {test:true}
+
+
+//////Build
+> npm run build
