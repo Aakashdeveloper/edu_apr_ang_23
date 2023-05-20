@@ -26,13 +26,12 @@ Deployment
 > Github
 > Render.com
 > AWS
-//////////////////////
-
 > Jenkins
 > nginx
 > Docker 
 > Github Actions
 LazyLoading
+//////////////////////
 Payment
 Ang Material
 
@@ -325,3 +324,9 @@ ng-touched    ng-dirty    ng-invalid
 
 //////Build
 > npm run build
+
+////Lazyloading
+> ng g m User --routing
+> ng g c User/viewuser
+PreloadAllModules
+NoPreloading

@@ -11,6 +11,8 @@ import { NotfoundComponent } from './notfound/notfound.component';
 import { HomeModule } from './Home/home.module';
 import { ListingModule } from './listing/listing.module';
 import { DetailsModule } from './details/details.module';
+import { PlaceOrderComponent } from './place-order/place-order.component';
+import { ViewBookingComponent } from './view-booking/view-booking.component';
 
 @NgModule({
     // All the component & pipe
@@ -18,7 +20,9 @@ import { DetailsModule } from './details/details.module';
         AppComponent,
         FooterComponent,
         HeaderComponent,
-        NotfoundComponent
+        NotfoundComponent,
+        PlaceOrderComponent,
+        ViewBookingComponent
     ],
 
     // All the modules
