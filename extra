@@ -31,14 +31,11 @@ Deployment
 > Docker 
 > Github Actions
 LazyLoading
-//////////////////////
-Payment
-Ang Material
-
 Testing
 Zomato+login logout
-
-
+Payment
+//////////////////////
+Ang Material
 Multilingual
 Zomato + Google Login
 
@@ -330,3 +327,7 @@ ng-touched    ng-dirty    ng-invalid
 > ng g c User/viewuser
 PreloadAllModules
 NoPreloading
+
+// dummy api
+npm i -g json-server
+json-server --watch order.json --port 8899
