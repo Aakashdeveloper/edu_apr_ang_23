@@ -5,6 +5,9 @@
     </div>
     <div id="social">
         <div *ngIf='token == ""'>
+            <a href="http://localhost:9800/auth/google"  class="btn">
+                <img src="https://i.ibb.co/37W2XwW/google.png" class="gicon" alt="gicon"> 
+            </a> &nbsp;
             <a [routerLink]="['/login']" class="btn btn-primary">
                 <span class="glyphicon glyphicon-log-in"></span>
                 Login
@@ -24,6 +27,18 @@
                 Logout
             </a>
         </div>
+        <div>
+            <a [routerLink]="['/login']" class="btn btn-primary">
+                <span class="glyphicon glyphicon-info"></span>
+                Hi Google
+            </a> &nbsp;&nbsp;
+            <a (click)="logoutUser()" class="btn btn-danger">
+                <span class="glyphicon glyphicon-log-out"></span>
+                Logout
+            </a>
+        </div>
+
+
         
     </div>
 </header>

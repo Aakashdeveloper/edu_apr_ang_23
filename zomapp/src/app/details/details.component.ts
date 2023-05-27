@@ -17,6 +17,7 @@ export class DetailsComponent implements OnInit{
                 private detailsService:DetailsService) {}
 
     ngOnInit(): void {
+        //console.log("restId>>>",this.route.snapshot.queryParamMap.get('restId'))
         this.id = Number(this.route.snapshot.queryParamMap.get('restId'))
         this.detailsService.getDetails(this.id)
             .subscribe((data:IRest[]) => this.details = data)

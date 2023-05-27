@@ -13,4 +13,7 @@ export class DetailsService{
     getDetails(restId:Number):Observable<IRest[]>{
         return this.http.get<IRest[]>(`${this.baseUrl}/details/${restId}`)
     }
+    getUserDetails(id:string):Observable<any[]>{
+        return this.http.get<any[]>(`http://localhost:1234/users/${id}`)
+    }
 }
