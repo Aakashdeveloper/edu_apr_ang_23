@@ -14,7 +14,6 @@ describe('my first test', () => {
         // assert
         expect(out.a).toBe(true);
     });
-    
-
+ 
 });
 
